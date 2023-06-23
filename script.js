@@ -9,7 +9,7 @@ function listen() {
   speech.onresult = function(event) {
     let transcript = event.results[0][0].transcript;
     if (transcript.includes("hello")) {
-         outputArea.innerHTML = "Hello, User!"
+         outputArea.innerHTML = "Hello, Mr. Raman!"
     } else if (transcript.includes("weather")) {
         window.open("https://www.google.com/search?q=weather") 
     } else {
