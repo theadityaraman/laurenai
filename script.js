@@ -8,6 +8,13 @@ function listen() {
 // config transcript i dont wanna go i thought we were going to the movies
   speech.onresult = function(event) {
     let transcript = event.results[0][0].transcript;
+    if (transcript.includes("hello")) {
+         outputArea.innerHTML = "Hello, User!"
+    } else if (transcript.includes("weather")) {
+        window.open("https://www.google.com/search?q=weather") 
+    } else {
+        outputArea.innerHTML = "I don't know what you mean."
+    }
     inputArea.innerHTML = event.results[0][0].transcript;
   }
 }
