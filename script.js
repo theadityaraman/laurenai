@@ -1,4 +1,4 @@
-function() {
+function listen() {
   let inputArea = document.getElementById('input-area')
   let outputArea = document.getElementById('output-area')
 // speech rec config fuck shes playing me
