@@ -1,3 +1,4 @@
+require('dotenv').config();
 // Listening function setup
 function listen() {
   let inputArea = document.getElementById('input-area')
